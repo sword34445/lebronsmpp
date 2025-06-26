@@ -1,0 +1,9 @@
+{
+  "name": "Minecraft Server",
+  "image": "mcr.microsoft.com/devcontainers/java:0-17",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [25565],
+  "postCreateCommand": "chmod +x setup.sh && ./setup.sh"
+}
